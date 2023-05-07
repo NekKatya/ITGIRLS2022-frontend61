@@ -1,0 +1,147 @@
+<style> 
+
+*, *:before, *:after {
+box-sizing: border-box;
+
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    
+}
+
+.rectangle-big{
+    /* Rectangle 1 */
+    position: absolute;
+    width: 1026px;
+    height: 826px;
+    left: 895px;
+    top: 0px;
+    background: #F1EADC;
+}
+
+.header {
+    display: grid;
+    min-height: 826px;
+    align-items: center;
+    column-gap: 15px;
+    grid-template-columns: 2fr 6fr 3fr;
+    grid-template-rows: 2fr 8fr;
+    grid-template-areas:
+    "header-logo header-nav header-contacts"
+    ". header-text .";
+    background-color: #E5E5E5;
+    
+}
+
+.header-logo {
+    grid-area: header-logo;
+    justify-self: center;
+    
+    /* Womazing */
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+
+}
+
+.header-nav{
+    grid-area: header-nav;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    
+}
+.header-nav__link{
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    /* identical to box height, or 21px */
+    letter-spacing: 0.02em;
+    color: #000000;
+
+}
+
+.header-contacts{
+    position: relative;
+    grid-area: header-contacts;
+    display: grid;
+    grid-template-columns: repeat(3,auto)
+}
+
+
+.header-text {
+    position: relative;
+    grid-area:header-text;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+}
+
+.header-title {
+    /* Новые поступления в этом сезоне */
+
+left: 15px;
+top: 0px;
+/* Заголовок h1 */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 55px;
+line-height: 110%;
+/* or 61px */
+letter-spacing: 0.02em;
+color: #000000;
+}
+
+.header-subtitle{
+    /* Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне. Время исследовать. */
+
+    left: 15px;
+    top: 167px;
+    /* Крупный текст */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.header-image{
+    position: absolute;
+    right: 200px;
+    width: 216px;
+
+
+
+}
+
+.header-image-left{
+    position: absolute;
+    width: 380px;
+    height: 570px;
+    left: -21px;
+    top: -126px;
+    background: url(allef-vinicius-YG97wpX0OEg-unsplash.jpg);
+}
+
+.header-image-right{
+    position: absolute;
+    width: 197px;
+    height: 296px;
+    left: 0px;
+    top: -13px;
+    background: url(ionut-comanici-RDcEWH5hSDE-unsplash.jpg);
+}
