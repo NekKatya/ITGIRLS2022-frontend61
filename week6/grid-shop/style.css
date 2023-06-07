@@ -11,15 +11,6 @@ body{
     
 }
 
-.rectangle-big{
-    /* Rectangle 1 */
-    position: absolute;
-    width: 1026px;
-    height: 826px;
-    left: 895px;
-    top: 0px;
-    background: #F1EADC;
-}
 
 .header {
     display: grid;
